@@ -236,9 +236,9 @@ input, textarea {
                color: var(--azul);
               }
          .hero{
-          background-image: url(./WALLPAPER.png);
+          background-image: url(./WALLPAPER.png) ;
           background-repeat: no-repeat;
-          background-size: cover;
+          background-size: 120%;
           height: 420px;
           width: 100%;
           position: relative;
