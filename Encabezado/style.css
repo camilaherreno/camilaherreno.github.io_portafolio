@@ -40,7 +40,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-image: linear-gradient(to top, #eadbfd 0%, var(--lila) 100%);
   margin: 0;
-  padding: 0;
+  padding: 0 20px; /* Padding para alejar contenido de los bordes */
 }
 
 /* Ensure block display for certain elements */
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: medium;
-  margin: 10px 0;
+  margin: 20px 0; /* Aumentado el margen para alejar los párrafos de los bordes */
 }
 
 a {
@@ -163,6 +163,13 @@ input, textarea {
 
   .boton {
       width: 100%;
+      margin-top: 20px; /* Espacio adicional para la versión móvil */
+  }
+
+  p {
+      font-size: 0.8rem; /* Disminuir el tamaño de fuente de los párrafos */
+      margin: 10px 0; /* Reducir el margen superior e inferior */
+      line-height: 1.4; /* Ajustar la altura de línea para mejorar la legibilidad */
   }
 }
 
@@ -309,7 +316,57 @@ input, textarea {
       text-transform: uppercase;
       font-weight: bold;
       border-radius: .5rem;
-      width: 90%;
+      width: auto; /* Ajuste para la versión de escritorio */
       text-align: center;
+      margin: 20px auto; /* Centra el botón horizontalmente */
+      display: block; 
   }
-}
+
+  /* Mobile-specific styles */
+@media (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+
+  h1 {
+      font-size: 3rem;
+      margin: 0.67em 0;
+  }
+
+  h2 {
+      font-size: 3.5rem;
+  }
+
+  h3 {
+      font-size: 1.5rem;
+     
+
+  .titulo span {
+      font-size: 2rem;
+  }
+
+  .subtitulo {
+      font-size: 3rem;
+  }
+
+  .boton {
+      width: 100%;
+      margin-top: 20px; /* Espacio adicional para la versión móvil */
+  }
+
+  p {
+      font-size: 0.8rem; /* Disminuir el tamaño de fuente de los párrafos */
+      margin: 5px 0; /* Reducir el margen superior e inferior */
+      line-height: 1.4; /* Ajustar la altura de línea para mejorar la legibilidad */
+  }
+
+  /* Ajustar el tamaño de los íconos */
+  .icon {
+      font-size: 0.8rem; /* Reducir el tamaño de los íconos */
+  }
+
+  /* Ajustar el margen de los h3 y párrafos */
+  h3, p {
+      margin-bottom: 5px; /* Reducir el margen inferior */
+  }
+} } }
