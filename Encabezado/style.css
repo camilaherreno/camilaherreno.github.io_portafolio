@@ -360,10 +360,7 @@ input, textarea {
       line-height: 1.4; /* Ajustar la altura de línea para mejorar la legibilidad */
   }
 
-  /* Ajustar el tamaño de los íconos */
-  .icon {
-      font-size: 0.8rem; /* Reducir el tamaño de los íconos */
-  }
+ 
 
   /* Ajustar el margen de los h3 y párrafos */
   h3, p {
